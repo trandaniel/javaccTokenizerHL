@@ -1,0 +1,27 @@
+String scanned: [0000000]
+	->Token kind: <INTEGER>
+	->Token value: 0
+String scanned: [0]
+	->Token kind: <INTEGER>
+	->Token value: 0
+String scanned: [001]
+	->Token kind: <INTEGER>
+	->Token value: 1
+String scanned: [9]
+	->Token kind: <INTEGER>
+	->Token value: 9
+String scanned: [123]
+	->Token kind: <INTEGER>
+	->Token value: 123
+String scanned: [4535435435435]
+	->Token kind: <INTEGER>
+	->Token value: 4535435435435
+String scanned: [123]
+	->Token kind: <INTEGER>
+	->Token value: 123
+String scanned: [ab]
+	->Token kind: <IDENTIFIER>
+	->Token value: "ab"
+String scanned: [12345678901234567890123456789012345678901234567890123456789012345678901234567890]
+	->Token kind: <INTEGER>
+	->Token value: 12345678901234567890123456789012345678901234567890123456789012345678901234567890

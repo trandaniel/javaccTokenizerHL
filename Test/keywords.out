@@ -1,0 +1,99 @@
+String scanned: [and]
+	->Token kind: "AND"
+	->Token value: null
+String scanned: [as]
+	->Token kind: "AS"
+	->Token value: null
+String scanned: [bool]
+	->Token kind: "BOOL"
+	->Token value: null
+String scanned: [by]
+	->Token kind: "BY"
+	->Token value: null
+String scanned: [do]
+	->Token kind: "DO"
+	->Token value: null
+String scanned: [elif]
+	->Token kind: "ELIF"
+	->Token value: null
+String scanned: [else]
+	->Token kind: "ELSE"
+	->Token value: null
+String scanned: [fi]
+	->Token kind: "FI"
+	->Token value: null
+String scanned: [for]
+	->Token kind: "FOR"
+	->Token value: null
+String scanned: [foreach]
+	->Token kind: "FOREACH"
+	->Token value: null
+String scanned: [from]
+	->Token kind: "FROM"
+	->Token value: null
+String scanned: [fun]
+	->Token kind: "FUN"
+	->Token value: null
+String scanned: [if]
+	->Token kind: "IF"
+	->Token value: null
+String scanned: [in]
+	->Token kind: "IN"
+	->Token value: null
+String scanned: [int]
+	->Token kind: "INT"
+	->Token value: null
+String scanned: [isa]
+	->Token kind: "ISA"
+	->Token value: null
+String scanned: [not]
+	->Token kind: "NOT"
+	->Token value: null
+String scanned: [nuf]
+	->Token kind: "NUF"
+	->Token value: null
+String scanned: [od]
+	->Token kind: "OD"
+	->Token value: null
+String scanned: [or]
+	->Token kind: "OR"
+	->Token value: null
+String scanned: [polyn]
+	->Token kind: "POLYN"
+	->Token value: null
+String scanned: [print]
+	->Token kind: "PRINT"
+	->Token value: null
+String scanned: [return]
+	->Token kind: "RETURN"
+	->Token value: null
+String scanned: [stop]
+	->Token kind: "STOP"
+	->Token value: null
+String scanned: [then]
+	->Token kind: "THEN"
+	->Token value: null
+String scanned: [to]
+	->Token kind: "TO"
+	->Token value: null
+String scanned: [var]
+	->Token kind: "VAR"
+	->Token value: null
+String scanned: [while]
+	->Token kind: "WHILE"
+	->Token value: null
+String scanned: [x]
+	->Token kind: "X"
+	->Token value: null
+String scanned: [BOOL]
+	->Token kind: "BOOL"
+	->Token value: null
+String scanned: [dO]
+	->Token kind: "DO"
+	->Token value: null
+String scanned: [Else]
+	->Token kind: "ELSE"
+	->Token value: null
+String scanned: [wHIle]
+	->Token kind: "WHILE"
+	->Token value: null

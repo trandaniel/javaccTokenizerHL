@@ -1,0 +1,6 @@
+String scanned: [a]
+	->Token kind: <IDENTIFIER>
+	->Token value: "a"
+String scanned: [b]
+	->Token kind: <IDENTIFIER>
+	->Token value: "b"

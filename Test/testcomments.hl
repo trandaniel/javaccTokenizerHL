@@ -1,0 +1,10 @@
+a // single-line comment after identifier a
+/* test simple comments */
+/* 2 /* level */ comment */
+/* multi /* level *//* really/*really/*really*/*/*/*/
+/* try funny things //* **/ / * * / /* * / / * **/*/
+/* ok, now try multi-line
+/* and even deeper
+*/ now we are getting
+out */
+b

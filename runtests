@@ -1,0 +1,8 @@
+./t simpletokens
+./t keywords
+./t identifiers
+./t booleans
+./t integers
+./t decimals
+./t strings
+./t comments

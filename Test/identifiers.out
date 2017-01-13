@@ -1,0 +1,12 @@
+String scanned: [Thisisanidentifier]
+	->Token kind: <IDENTIFIER>
+	->Token value: "Thisisanidentifier"
+String scanned: [THISisanidentifier]
+	->Token kind: <IDENTIFIER>
+	->Token value: "THISisanidentifier"
+String scanned: [th1111110erer0er8]
+	->Token kind: <IDENTIFIER>
+	->Token value: "th1111110erer0er8"
+String scanned: [chara]
+	->Token kind: <IDENTIFIER>
+	->Token value: "chara"

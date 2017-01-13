@@ -1,0 +1,36 @@
+String scanned: [1.0]
+	->Token kind: <DECIMAL>
+	->Token value: 1.0
+String scanned: [000000000003.30000000000000000]
+	->Token kind: <DECIMAL>
+	->Token value: 3.30000000000000000
+String scanned: [1234.56789]
+	->Token kind: <DECIMAL>
+	->Token value: 1234.56789
+String scanned: [1.2E12]
+	->Token kind: <DECIMAL>
+	->Token value: 1.2E+12
+String scanned: [1.2E-12]
+	->Token kind: <DECIMAL>
+	->Token value: 1.2E-12
+String scanned: [1.2E+12]
+	->Token kind: <DECIMAL>
+	->Token value: 1.2E+12
+String scanned: [1.2e12]
+	->Token kind: <DECIMAL>
+	->Token value: 1.2E+12
+String scanned: [1.2e-12]
+	->Token kind: <DECIMAL>
+	->Token value: 1.2E-12
+String scanned: [1.2e+12]
+	->Token kind: <DECIMAL>
+	->Token value: 1.2E+12
+String scanned: [1234567890123456789012345678901234567890.1234567890123456789012345678901234567890]
+	->Token kind: <DECIMAL>
+	->Token value: 1234567890123456789012345678901234567890.1234567890123456789012345678901234567890
+String scanned: [1.0E2147483647]
+	->Token kind: <DECIMAL>
+	->Token value: 1.0E+2147483647
+String scanned: [1.0E-2147483646]
+	->Token kind: <DECIMAL>
+	->Token value: 1.0E-2147483646

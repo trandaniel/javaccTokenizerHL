@@ -1,0 +1,98 @@
+options {
+  IGNORE_CASE=false;
+}
+
+PARSER_BEGIN(HL)
+
+public class HL {
+}
+
+PARSER_END(HL)
+
+TOKEN_MGR_DECLS : {
+  static int depth ;
+}
+
+SKIP : {
+    < " " >
+  | < "\t" >
+  | < "\n" >
+  | < "\r" >
+  | < "//" (~["\n"])* "\n" >
+  | < "/*" > { depth = 1 ; } : NESTED_COMMENT
+}
+
+< NESTED_COMMENT > SKIP : {
+    "/*" { depth += 1 ; } : NESTED_COMMENT
+  | "*/" { depth -= 1 ; SwitchTo(depth == 0 ? DEFAULT : NESTED_COMMENT) ; }
+  | < ~[] >
+
+}
+
+//case insensitive tokens
+TOKEN [IGNORE_CASE]: {
+
+  < ELSE: "else" >
+| < FOR: "for" >
+| < AND: "and" >
+| < AS: "as" >
+|	< BOOL: "bool" >
+|	< BY: "by" >
+|	< DEC: "dec" >
+|	< DO: "do" >
+|	< ELIF: "elif" >
+|	< FI: "fi" >
+|	< FOREACH: "foreach" >
+|	< FROM: "from" >
+|	< FUN: "fun" >
+|	< IF: "if" >
+|	< IN: "in" >
+|	< INT: "int" >
+|	< ISA: "isa" >
+|	< NOT: "not" >
+|	< NUF: "nuf" >
+|	< OD: "od" >
+|	< OR: "or" >
+|	< POLYN: "polyn" >
+|	< PRINT: "print" >
+|	< RETURN: "return" >
+|	< STOP: "stop" >
+|	< THEN: "then" >
+|	< TO: "to" >
+|	< VAR: "var" >
+|	< WHILE: "while" >
+|	< X: "x" >
+
+|	< BOOLEAN: "false" | "true" >
+}
+
+TOKEN :
+{
+	< LT: "<" >
+|	< LE: "<=" >
+|	< GT: ">" >
+|	< GE: ">=" >
+|	< NE: "<>" >
+|	< EQ: "==" >
+|	< ADD: "+" >
+|	< SUB: "-" >
+|	< PROD: "*" >
+|	< DIV: "/" >
+|	< EXP: "^" >
+|	< ASSIGN: "=" >
+|	< LPAREN: "(" >
+|	< RPAREN: ")" >
+|	< LSQUARE: "[" >
+|	< RSQUARE: "]" >
+|	< COMMA: "," >
+|	< SEMICOL: ";" >
+
+|	< DECIMAL: (<INTEGER>)["."](<DIGIT>)+(["E","e"](<SUB> | <ADD>)?(<INTEGER>))? >
+|	< IDENTIFIER: (<LETTER>) (<LETTER> | <DIGIT>)* >
+|	< INTEGER: (<DIGIT>)+ >
+| < STRING: ["\""]( ~["\\","\"","\t","\n"] | "\\"["\\","\"","t","n"])*["\""] >
+
+//helper tokens
+| < #LETTER: ["a"-"z","A"-"Z"] >
+| < #DIGIT: ["0"-"9"] >
+}

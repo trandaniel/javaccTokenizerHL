@@ -1,0 +1,18 @@
+String scanned: [true]
+	->Token kind: <BOOLEAN>
+	->Token value: true
+String scanned: [TRUE]
+	->Token kind: <BOOLEAN>
+	->Token value: true
+String scanned: [tRUe]
+	->Token kind: <BOOLEAN>
+	->Token value: true
+String scanned: [false]
+	->Token kind: <BOOLEAN>
+	->Token value: false
+String scanned: [FALSE]
+	->Token kind: <BOOLEAN>
+	->Token value: false
+String scanned: [fALse]
+	->Token kind: <BOOLEAN>
+	->Token value: false
